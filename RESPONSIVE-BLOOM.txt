@@ -1,0 +1,15 @@
+Bloom responsive update
+
+Changes:
+- Replaced visible SHOP.CO wordmark with Bloom in the navbar and footer.
+- Added a matching Bloom flower favicon and updated the browser title/meta description.
+- Rebuilt the mobile navbar with a compact brand row, accessible menu toggle, search field, and two-column mobile links.
+- Tuned the homepage hero typography, spacing, CTA width, image height, and stats for narrow screens.
+- Converted the customer profile navigation into a horizontally scrollable mobile tab row while retaining the desktop sidebar.
+- Reduced product card typography/padding for small screens and added global overflow/media safeguards.
+
+Run:
+  npm install
+  npm run dev
+
+Note: A production build could not be run in this environment because the supplied node_modules directory did not contain the Vite executable. Install dependencies on your machine before running the project.

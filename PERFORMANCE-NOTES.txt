@@ -1,0 +1,14 @@
+Bloom storefront performance update
+
+- Removed the full-screen fake loading sequence so the storefront renders immediately.
+- Removed scroll-linked React state updates from the home hero.
+- Replaced long reveal motion and blur filters with short opacity/transform transitions.
+- Removed large animated blurred background blobs and disabled animated shine.
+- Shortened hero entrance animation and removed multi-second delays.
+- Reduced decorative motion on mobile and respected reduced-motion preferences.
+
+Run locally:
+  npm install
+  npm run dev
+
+Note: A production build could not be verified in this environment because npm dependency installation timed out.

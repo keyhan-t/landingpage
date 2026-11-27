@@ -1,0 +1,452 @@
+@import "tailwindcss";
+
+/* ═══════════════ تنظیمات اصلی (فونت‌ها و رنگ‌ها) ═══════════════ */
+/* هر چیزی که اینجا تعریف کنی توی تیلویند به‌صورت کلاس قابل استفاده می‌شه:
+   --font-archivo  →  font-archivo
+   --color-hero    →  bg-hero
+   --color-mist    →  bg-mist                                              */
+@theme {
+  --font-archivo: "Archivo Black", "Vazirmatn", sans-serif;
+  --font-sans: "Vazirmatn", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-mist: #f3f4f6;
+  --color-hero: #f2f0f1;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html {
+  scroll-behavior: smooth; /* اسکرول نرم */
+}
+
+/* تیترها: Archivo Black فقط حروف لاتین داره، پس حروف فارسی با Vazirmatn سنگین (۹۰۰) نشون داده می‌شن.
+   font-synthesis-weight: none یعنی Archivo Black هیچ‌وقت "کلفت‌شده‌ی مصنوعی" نشه */
+.font-archivo {
+  font-weight: 900;
+  font-synthesis-weight: none;
+}
+body {
+  font-family: var(--font-sans);
+  overflow-x: hidden; /* جلوگیری از اسکرول افقی */
+  background: #fff;
+  color: #000;
+}
+::selection {
+  background: #2563eb;
+  color: #fff;
+}
+
+/* مخفی کردن اسکرول‌بار (برای اسلایدرها) */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* انیمیشن اسکرول: کوتاه و سبک، فقط opacity و transform */
+.reveal {
+  opacity: 0;
+  transition: opacity 420ms ease-out, transform 420ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  will-change: opacity, transform;
+}
+.reveal[data-variant="up"] { transform: translate3d(0, 18px, 0); }
+.reveal[data-variant="down"] { transform: translate3d(0, -18px, 0); }
+.reveal[data-variant="left"] { transform: translate3d(-20px, 0, 0); }
+.reveal[data-variant="right"] { transform: translate3d(20px, 0, 0); }
+.reveal[data-variant="zoom"] { transform: scale(0.97); }
+.reveal[data-variant="blur"] { transform: translate3d(0, 12px, 0); }
+[dir="rtl"] .reveal[data-variant="left"]:not(.in-view) { transform: translate3d(20px, 0, 0); }
+[dir="rtl"] .reveal[data-variant="right"]:not(.in-view) { transform: translate3d(-20px, 0, 0); }
+.reveal.in-view { opacity: 1; transform: none; will-change: auto; }
+
+/* ═══════════════ انیمیشن‌های بالای صفحه (Hero) ═══════════════ */
+.hero-anim {
+  animation: fade-up 550ms ease-out both;
+}
+.hero-img {
+  animation: kenburns 650ms ease-out both;
+}
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes kenburns {
+  from {
+    transform: scale(1.18);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* محو شدن لبه‌ی چپ عکس هیرو توی صفحه‌های بزرگ */
+@media (min-width: 1024px) {
+  .hero-fade {
+    -webkit-mask-image: linear-gradient(to left, transparent 0%, #000 24%);
+    mask-image: linear-gradient(to left, transparent 0%, #000 24%);
+  }
+}
+
+/* ═══════════════ انیمیشن‌های تکراری و تزئینی ═══════════════ */
+@keyframes twinkle {
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.7) rotate(45deg);
+    opacity: 0.6;
+  }
+}
+@keyframes blob {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -20px) scale(1.15);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(50%);
+  }
+}
+@keyframes pop {
+  0% {
+    transform: scale(0.4);
+  }
+  70% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes bar-grow {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* کلاس‌هایی که توی کامپوننت‌ها استفاده می‌کنیم */
+.animate-twinkle {
+  animation: twinkle 3.5s ease-in-out infinite;
+}
+.animate-blob {
+  animation: none;
+}
+.animate-marquee {
+  animation: marquee 42s linear infinite;
+}
+.animate-pop {
+  animation: pop 0.45s var(--ease-out-expo);
+}
+.animate-fade {
+  animation: fade-in 0.3s ease both;
+}
+.animate-modal {
+  animation: modal-in 0.5s var(--ease-out-expo) both;
+}
+.animate-panel {
+  animation: fade-up 0.6s var(--ease-out-expo) both;
+}
+
+/* خط زیر لینک‌ها که موقع hover کشیده می‌شه */
+.link-underline {
+  position: relative;
+  display: inline-block;
+}
+.link-underline::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  height: 2px;
+  width: 100%;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s var(--ease-out-expo);
+}
+.link-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+
+/* خط آبی زیر تیتر سکشن‌ها */
+.title-bar {
+  transform-origin: right;
+  transform: scaleX(0);
+}
+.in-view .title-bar {
+  animation: bar-grow 0.9s 0.35s var(--ease-out-expo) forwards;
+}
+
+/* کسانی که انیمیشن کم رو تو سیستمشون فعال کردن، انیمیشن نمی‌بینن */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+
+/* انیمیشن‌های مخصوص لودینگ (توی Loader.jsx صدا زده می‌شن) */
+@keyframes draw {
+  from {
+    stroke-dashoffset: 800;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes logo-float {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(-1deg); }
+  50% { transform: translate3d(0, -5px, 0) rotate(1deg); }
+}
+@keyframes letter-rise {
+  from {
+    transform: translateY(110%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ═══════════════ صفحه‌ی محصولات ═══════════════ */
+
+/* اسلایدر قیمت دو‌تایی: دو تا input از نوع range روی هم قرار می‌گیرن */
+.dual-range {
+  direction: ltr; /* نوار قیمت همیشه از کم (چپ) به زیاد (راست) */
+  position: relative;
+  height: 24px;
+}
+.dual-range input[type="range"] {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 24px;
+  margin: 0;
+  background: transparent;
+  pointer-events: none; /* خود نوار کلیک‌پذیر نیست، فقط دسته‌ها */
+  -webkit-appearance: none;
+  appearance: none;
+}
+.dual-range input[type="range"]::-webkit-slider-runnable-track {
+  background: transparent;
+}
+.dual-range input[type="range"]::-moz-range-track {
+  background: transparent;
+}
+.dual-range input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  pointer-events: auto; /* دسته‌ها کلیک‌پذیرن */
+  width: 22px;
+  height: 22px;
+  border-radius: 9999px;
+  background: #fff;
+  border: 3px solid #2563eb;
+  box-shadow: 0 2px 10px rgba(37, 99, 235, 0.35);
+  cursor: grab;
+  transition: transform 0.2s;
+}
+.dual-range input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.18);
+}
+.dual-range input[type="range"]::-moz-range-thumb {
+  pointer-events: auto;
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  background: #fff;
+  border: 3px solid #2563eb;
+  box-shadow: 0 2px 10px rgba(37, 99, 235, 0.35);
+  cursor: grab;
+}
+
+/* متن درخشان (روی پس‌زمینه‌ی مشکی) */
+.text-shine {
+  background: linear-gradient(110deg, #fff 30%, #60a5fa 50%, #fff 70%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: none;
+}
+@keyframes shine {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+/* شناور بودن (برای آیکون‌های تزئینی) */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(8deg);
+  }
+}
+.animate-float {
+  animation: float 7s ease-in-out infinite;
+}
+
+/* منوی فیلتر موبایل که از راست میاد */
+@keyframes drawer-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: none;
+  }
+}
+.animate-drawer {
+  animation: drawer-in 0.45s var(--ease-out-expo) both;
+}
+
+/* کارت‌ها و ردیف‌های محصولات نباید اسکرول عمودی داخلی بگیرند. */
+.product-card, .product-section, .product-grid { overflow-y: visible; }
+
+
+/* بهینه‌سازی رندر و اسکرول */
+html { scroll-behavior: smooth; }
+@media (max-width: 767px) {
+  .animate-twinkle, .animate-float { animation: none !important; }
+  .animate-marquee { animation-duration: 55s; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .hero-img, .hero-anim { animation: none !important; }
+}
+
+
+/* لودر سبک و سازگار با تنظیم کاهش حرکت سیستم */
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .hero-anim, .hero-img, .animate-marquee, .animate-twinkle {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+  .reveal { opacity: 1 !important; }
+}
+
+/* Bloom logo motion: transform/opacity only for smooth, inexpensive animation. */
+.bloom-loader-mark { animation: bloom-mark-enter 650ms cubic-bezier(.2,.8,.2,1) both; }
+.bloom-loader-orbit { animation: bloom-orbit 3.8s linear infinite; }
+.bloom-petal { transform-box: view-box; transform-origin: 60px 60px; animation: bloom-petal-in 900ms cubic-bezier(.2,.8,.2,1) both; }
+.bloom-petal-2 { animation-delay: 70ms; }
+.bloom-petal-3 { animation-delay: 140ms; }
+.bloom-petal-4 { animation-delay: 210ms; }
+.bloom-petal-5 { animation-delay: 280ms; }
+.bloom-loader-wordmark { color: #171323; font-size: 2.65rem; line-height: 1; font-weight: 800; letter-spacing: -.065em; animation: bloom-wordmark-in 650ms 180ms cubic-bezier(.2,.8,.2,1) both; }
+.bloom-loader-wordmark span { color: #7c3aed; }
+.bloom-loader-progress { transform: scaleX(0); animation: bloom-progress 2.35s cubic-bezier(.22,.75,.25,1) forwards; }
+@keyframes bloom-mark-enter { from { opacity: 0; transform: translateY(12px) scale(.92); } to { opacity: 1; transform: translateY(0) scale(1); } }
+@keyframes bloom-orbit { to { transform: rotate(360deg); } }
+@keyframes bloom-petal-in { from { opacity: 0; scale: .65; } to { opacity: 1; scale: 1; } }
+@keyframes bloom-wordmark-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes bloom-progress { to { transform: scaleX(1); } }
+@media (prefers-reduced-motion: reduce) {
+  .bloom-loader-mark, .bloom-loader-orbit, .bloom-petal, .bloom-loader-wordmark, .bloom-loader-progress { animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+}
+
+
+/* Bloom responsive foundation */
+*, *::before, *::after { box-sizing: border-box; }
+img, video, svg { max-width: 100%; }
+#root { width: 100%; min-width: 0; overflow-x: clip; }
+body { min-width: 320px; }
+main, section, article, header, footer { min-width: 0; }
+@media (max-width: 639px) {
+  html { scroll-padding-top: 68px; }
+  body { font-size: 14px; }
+  .reveal { will-change: auto; }
+  .animate-modal { animation-duration: .28s; }
+  .bloom-loader-mark { max-width: 112px; max-height: 112px; }
+}
+@media (max-width: 380px) {
+  .font-archivo { letter-spacing: -0.035em; }
+}
+@media (hover: none) {
+  .group-hover\:scale-110:hover { transform: none; }
+}
+
+
+/* Bloom responsive polish: compact phones first, without changing desktop composition. */
+@media (max-width: 639px) {
+  .hero-anim { animation-duration: 420ms; }
+  header.bg-hero { min-height: 0; }
+  header.bg-hero .hero-img { object-position: 76% 24%; }
+  header.bg-hero .hero-anim h1 { overflow-wrap: anywhere; }
+  header.bg-hero .hero-anim { max-width: 100%; }
+  header.bg-hero .hero-fade { height: 100%; }
+  .product-card, article.group { min-width: 0; }
+  article.group { gap: .4rem; }
+  article.group .text-xs { line-height: 1.45; }
+  footer ul { min-width: 0; }
+}
+@media (max-width: 380px) {
+  nav .max-w-7xl { gap: .15rem; }
+  nav a[aria-label="Bloom - صفحه اصلی"] { font-size: 20px; gap: 5px; }
+  nav a[aria-label="سبد خرید"], nav a[aria-label="حساب کاربری"] { width: 34px; height: 34px; }
+  header.bg-hero h1 { font-size: clamp(1.65rem, 7.4vw, 1.9rem); line-height: 1.4; }
+  header.bg-hero p { font-size: 12px; line-height: 1.9; }
+  header.bg-hero .hero-anim.mt-3 { gap: .35rem; }
+  header.bg-hero .hero-anim.mt-3 > div { padding-inline-end: .35rem; }
+  .product-grid, .grid { min-width: 0; }
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+  header.bg-hero .hero-img { object-position: 78% 28%; }
+}

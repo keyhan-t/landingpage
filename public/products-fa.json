@@ -1,0 +1,427 @@
+[
+  {
+    "id": 1,
+    "title": "تی‌شرت کلاسیک یقه‌گرد سفید",
+    "price": 890000,
+    "description": "تی‌شرت کلاسیک یقه‌گرد سفید با طراحی کاربردی و پارچه‌ی باکیفیت؛ انتخابی خوش‌استایل برای استفاده‌ی روزمره و ساختن استایل شخصی شما.",
+    "category": "پوشاک مردانه",
+    "image": "/products/garment-01.webp",
+    "images": [
+      "/products/garment-01.webp"
+    ],
+    "rating": {
+      "rate": 4.5,
+      "count": 214
+    },
+    "thumbnail": "/products/garment-01.webp"
+  },
+  {
+    "id": 2,
+    "title": "شلوار جین اسلیم‌فیت آبی",
+    "price": 1450000,
+    "description": "شلوار جین اسلیم‌فیت آبی با طراحی کاربردی و پارچه‌ی باکیفیت؛ انتخابی خوش‌استایل برای استفاده‌ی روزمره و ساختن استایل شخصی شما.",
+    "category": "پوشاک مردانه",
+    "image": "/products/garment-02.webp",
+    "images": [
+      "/products/garment-02.webp"
+    ],
+    "rating": {
+      "rate": 3.5,
+      "count": 98
+    },
+    "oldPrice": 1690000,
+    "thumbnail": "/products/garment-02.webp"
+  },
+  {
+    "id": 3,
+    "title": "پیراهن چهارخانه کژوال",
+    "price": 1190000,
+    "description": "پیراهن چهارخانه کژوال با طراحی کاربردی و پارچه‌ی باکیفیت؛ انتخابی خوش‌استایل برای استفاده‌ی روزمره و ساختن استایل شخصی شما.",
+    "category": "پوشاک مردانه",
+    "image": "/products/garment-03.webp",
+    "images": [
+      "/products/garment-03.webp"
+    ],
+    "rating": {
+      "rate": 5,
+      "count": 320
+    },
+    "thumbnail": "/products/garment-03.webp"
+  },
+  {
+    "id": 4,
+    "title": "تی‌شرت راه‌راه آستین‌کوتاه",
+    "price": 790000,
+    "description": "تی‌شرت راه‌راه آستین‌کوتاه با طراحی کاربردی و پارچه‌ی باکیفیت؛ انتخابی خوش‌استایل برای استفاده‌ی روزمره و ساختن استایل شخصی شما.",
+    "category": "پوشاک مردانه",
+    "image": "/products/garment-04.webp",
+    "images": [
+      "/products/garment-04.webp"
+    ],
+    "rating": {
+      "rate": 3.5,
+      "count": 76
+    },
+    "oldPrice": 990000,
+    "thumbnail": "/products/garment-04.webp"
+  },
+  {
+    "id": 5,
+    "title": "پیراهن لینن آستین‌بلند",
+    "price": 1280000,
+    "description": "پیراهن لینن آستین‌بلند با طراحی کاربردی و پارچه‌ی باکیفیت؛ انتخابی خوش‌استایل برای استفاده‌ی روزمره و ساختن استایل شخصی شما.",
+    "category": "پوشاک مردانه",
+    "image": "/products/garment-05.webp",
+    "images": [
+      "/products/garment-05.webp"
+    ],
+    "rating": {
+      "rate": 4.5,
+      "count": 187
+    },
+    "oldPrice": 1480000,
+    "thumbnail": "/products/garment-05.webp"
+  },
+  {
+    "id": 6,
+    "title": "هودی پنبه‌ای اورسایز",
+    "price": 920000,
+    "description": "هودی پنبه‌ای اورسایز با طراحی کاربردی و پارچه‌ی باکیفیت؛ انتخابی خوش‌استایل برای استفاده‌ی روزمره و ساختن استایل شخصی شما.",
+    "category": "پوشاک مردانه",
+    "image": "/products/garment-06.webp",
+    "images": [
+      "/products/garment-06.webp"
+    ],
+    "rating": {
+      "rate": 4,
+      "count": 143
+    },
+    "thumbnail": "/products/garment-06.webp"
+  },
+  {
+    "id": 7,
+    "title": "شلوار کتان راسته",
+    "price": 640000,
+    "description": "شلوار کتان راسته با طراحی کاربردی و پارچه‌ی باکیفیت؛ انتخابی خوش‌استایل برای استفاده‌ی روزمره و ساختن استایل شخصی شما.",
+    "category": "پوشاک مردانه",
+    "image": "/products/garment-07.webp",
+    "images": [
+      "/products/garment-07.webp"
+    ],
+    "rating": {
+      "rate": 3,
+      "count": 59
+    },
+    "thumbnail": "/products/garment-07.webp"
+  },
+  {
+    "id": 8,
+    "title": "تی‌شرت یقه‌دار پولو مشکی",
+    "price": 1390000,
+    "description": "پولوشرت مینیمال مشکی با طراحی کاربردی و پارچه‌ی باکیفیت؛ انتخابی خوش‌استایل برای استفاده‌ی روزمره و ساختن استایل شخصی شما.",
+    "category": "پوشاک مردانه",
+    "image": "/products/garment-08.webp",
+    "images": [
+      "/products/garment-08.webp"
+    ],
+    "rating": {
+      "rate": 4.5,
+      "count": 201
+    },
+    "thumbnail": "/products/garment-08.webp"
+  },
+  {
+    "id": 9,
+    "title": "تی‌شرت زنانه فیت آزاد",
+    "price": 1250000,
+    "description": "تی‌شرت زنانه فیت آزاد با طراحی کاربردی و پارچه‌ی باکیفیت؛ انتخابی خوش‌استایل برای استفاده‌ی روزمره و ساختن استایل شخصی شما.",
+    "category": "پوشاک زنانه",
+    "image": "/products/garment-09.webp",
+    "images": [
+      "/products/garment-09.webp"
+    ],
+    "rating": {
+      "rate": 4,
+      "count": 112
+    },
+    "oldPrice": 1450000,
+    "thumbnail": "/products/garment-09.webp"
+  },
+  {
+    "id": 10,
+    "title": "بلوز زنانه یقه‌گرد",
+    "price": 1650000,
+    "description": "بلوز زنانه یقه‌گرد با طراحی کاربردی و پارچه‌ی باکیفیت؛ انتخابی خوش‌استایل برای استفاده‌ی روزمره و ساختن استایل شخصی شما.",
+    "category": "پوشاک زنانه",
+    "image": "/products/garment-10.webp",
+    "images": [
+      "/products/garment-10.webp"
+    ],
+    "rating": {
+      "rate": 4,
+      "count": 260
+    },
+    "thumbnail": "/products/garment-10.webp"
+  },
+  {
+    "id": 11,
+    "title": "مانتو کتان روزمره",
+    "price": 2150000,
+    "description": "مانتو کتان روزمره با طراحی کاربردی و پارچه‌ی باکیفیت؛ انتخابی خوش‌استایل برای استفاده‌ی روزمره و ساختن استایل شخصی شما.",
+    "category": "پوشاک زنانه",
+    "image": "/products/garment-11.webp",
+    "images": [
+      "/products/garment-11.webp"
+    ],
+    "rating": {
+      "rate": 4.5,
+      "count": 174
+    },
+    "oldPrice": 2490000,
+    "thumbnail": "/products/garment-11.webp"
+  },
+  {
+    "id": 12,
+    "title": "پیراهن تابستانی گل‌دار",
+    "price": 860000,
+    "description": "پیراهن تابستانی گل‌دار با طراحی کاربردی و پارچه‌ی باکیفیت؛ انتخابی خوش‌استایل برای استفاده‌ی روزمره و ساختن استایل شخصی شما.",
+    "category": "پوشاک زنانه",
+    "image": "/products/garment-12.webp",
+    "images": [
+      "/products/garment-12.webp"
+    ],
+    "rating": {
+      "rate": 3.5,
+      "count": 64
+    },
+    "thumbnail": "/products/garment-12.webp"
+  },
+  {
+    "id": 13,
+    "title": "شومیز سفید کلاسیک",
+    "price": 780000,
+    "description": "شومیز سفید کلاسیک با طراحی کاربردی و پارچه‌ی باکیفیت؛ انتخابی خوش‌استایل برای استفاده‌ی روزمره و ساختن استایل شخصی شما.",
+    "category": "پوشاک زنانه",
+    "image": "/products/garment-13.webp",
+    "images": [
+      "/products/garment-13.webp"
+    ],
+    "rating": {
+      "rate": 5,
+      "count": 298
+    },
+    "oldPrice": 950000,
+    "thumbnail": "/products/garment-13.webp"
+  },
+  {
+    "id": 14,
+    "title": "شلوار پارچه‌ای زنانه",
+    "price": 830000,
+    "description": "شلوار پارچه‌ای زنانه با طراحی کاربردی و پارچه‌ی باکیفیت؛ انتخابی خوش‌استایل برای استفاده‌ی روزمره و ساختن استایل شخصی شما.",
+    "category": "پوشاک زنانه",
+    "image": "/products/garment-14.webp",
+    "images": [
+      "/products/garment-14.webp"
+    ],
+    "rating": {
+      "rate": 4.5,
+      "count": 231
+    },
+    "oldPrice": 1890000,
+    "thumbnail": "/products/garment-14.webp"
+  },
+  {
+    "id": 15,
+    "title": "ژاکت بافت سبک",
+    "price": 1890000,
+    "description": "ژاکت بافت سبک با طراحی کاربردی و پارچه‌ی باکیفیت؛ انتخابی خوش‌استایل برای استفاده‌ی روزمره و ساختن استایل شخصی شما.",
+    "category": "پوشاک زنانه",
+    "image": "/products/garment-15.webp",
+    "images": [
+      "/products/garment-15.webp"
+    ],
+    "rating": {
+      "rate": 4.5,
+      "count": 156
+    },
+    "thumbnail": "/products/garment-15.webp"
+  },
+  {
+    "id": 16,
+    "title": "دامن میدی چین‌دار",
+    "price": 1120000,
+    "description": "دامن میدی چین‌دار با طراحی کاربردی و پارچه‌ی باکیفیت؛ انتخابی خوش‌استایل برای استفاده‌ی روزمره و ساختن استایل شخصی شما.",
+    "category": "پوشاک زنانه",
+    "image": "/products/garment-16.webp",
+    "images": [
+      "/products/garment-16.webp"
+    ],
+    "rating": {
+      "rate": 4,
+      "count": 88
+    },
+    "oldPrice": 1320000,
+    "thumbnail": "/products/garment-16.webp"
+  },
+  {
+    "id": 17,
+    "title": "شال نخی ساده کرم",
+    "price": 420000,
+    "description": "شال نخی ساده کرم با طراحی کاربردی و پارچه‌ی باکیفیت؛ انتخابی خوش‌استایل برای استفاده‌ی روزمره و ساختن استایل شخصی شما.",
+    "category": "اکسسوری",
+    "image": "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=900&q=85",
+    "images": [
+      "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=900&q=85"
+    ],
+    "rating": {
+      "rate": 4,
+      "count": 132
+    }
+  },
+  {
+    "id": 18,
+    "title": "کلاه کپ بیسیک",
+    "price": 350000,
+    "description": "کلاه کپ بیسیک با طراحی کاربردی و پارچه‌ی باکیفیت؛ انتخابی خوش‌استایل برای استفاده‌ی روزمره و ساختن استایل شخصی شما.",
+    "category": "اکسسوری",
+    "image": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=900&q=85",
+    "images": [
+      "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=900&q=85"
+    ],
+    "rating": {
+      "rate": 3.5,
+      "count": 47
+    }
+  },
+  {
+    "id": 19,
+    "title": "کیف دوشی روزمره",
+    "price": 760000,
+    "description": "کیف دوشی روزمره با طراحی کاربردی و پارچه‌ی باکیفیت؛ انتخابی خوش‌استایل برای استفاده‌ی روزمره و ساختن استایل شخصی شما.",
+    "category": "اکسسوری",
+    "image": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=85",
+    "images": [
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=85"
+    ],
+    "rating": {
+      "rate": 4.5,
+      "count": 119
+    },
+    "oldPrice": 890000
+  },
+  {
+    "id": 20,
+    "title": "کمربند چرمی کلاسیک",
+    "price": 980000,
+    "description": "کمربند چرمی کلاسیک با طراحی کاربردی و پارچه‌ی باکیفیت؛ انتخابی خوش‌استایل برای استفاده‌ی روزمره و ساختن استایل شخصی شما.",
+    "category": "اکسسوری",
+    "image": "https://images.unsplash.com/photo-1624222247344-550fb8d4e2f7?auto=format&fit=crop&w=900&q=85",
+    "images": [
+      "https://images.unsplash.com/photo-1624222247344-550fb8d4e2f7?auto=format&fit=crop&w=900&q=85"
+    ],
+    "rating": {
+      "rate": 4,
+      "count": 73
+    }
+  },
+  {
+    "id": 21,
+    "title": "تی‌شرت زنانه لانگ‌لاین",
+    "category": "پوشاک زنانه",
+    "price": 1305000,
+    "oldPrice": null,
+    "description": "تی‌شرت زنانه لانگ‌لاین با طراحی امروزی و پارچه‌ی خوش‌کیفیت، مناسب استایل روزانه.",
+    "image": "/products/garment-09.webp",
+    "images": [
+      "/products/garment-09.webp"
+    ],
+    "rating": {
+      "rate": 4.6,
+      "count": 153
+    },
+    "thumbnail": "/products/garment-09.webp"
+  },
+  {
+    "id": 22,
+    "title": "تی‌شرت زنانه یقه هفت",
+    "category": "پوشاک زنانه",
+    "price": 1320000,
+    "oldPrice": null,
+    "description": "تی‌شرت زنانه یقه هفت با طراحی امروزی و پارچه‌ی خوش‌کیفیت، مناسب استایل روزانه.",
+    "image": "/products/garment-10.webp",
+    "images": [
+      "/products/garment-10.webp"
+    ],
+    "rating": {
+      "rate": 4.6,
+      "count": 156
+    },
+    "thumbnail": "/products/garment-10.webp"
+  },
+  {
+    "id": 23,
+    "title": "تونیک زنانه لینن",
+    "category": "پوشاک زنانه",
+    "price": 1335000,
+    "oldPrice": null,
+    "description": "تونیک زنانه لینن با طراحی امروزی و پارچه‌ی خوش‌کیفیت، مناسب استایل روزانه.",
+    "image": "/products/garment-05.webp",
+    "images": [
+      "/products/garment-05.webp"
+    ],
+    "rating": {
+      "rate": 4.6,
+      "count": 159
+    },
+    "thumbnail": "/products/garment-05.webp"
+  },
+  {
+    "id": 24,
+    "title": "کت کوتاه زنانه",
+    "category": "پوشاک زنانه",
+    "price": 1350000,
+    "oldPrice": null,
+    "description": "کت کوتاه زنانه با طراحی امروزی و پارچه‌ی خوش‌کیفیت، مناسب استایل روزانه.",
+    "image": "/products/garment-11.webp",
+    "images": [
+      "/products/garment-11.webp"
+    ],
+    "rating": {
+      "rate": 4.6,
+      "count": 162
+    },
+    "thumbnail": "/products/garment-11.webp"
+  },
+  {
+    "id": 25,
+    "title": "تی‌شرت زنانه یقه‌اسکی",
+    "category": "پوشاک زنانه",
+    "price": 1100000,
+    "description": "تی‌شرت زنانه یقه‌اسکی با پارچه‌ی پنبه‌ای نرم و فرم راحت.",
+    "image": "/products/garment-10.webp",
+    "images": [
+      "/products/garment-10.webp"
+    ],
+    "rating": {
+      "rate": 4.4,
+      "count": 110
+    },
+    "thumbnail": "/products/garment-10.webp"
+  },
+  {
+    "id": 26,
+    "title": "تی‌شرت مردانه پنبه‌ای ذغالی",
+    "category": "پوشاک مردانه",
+    "price": 1110000,
+    "description": "تی‌شرت مردانه پنبه‌ای ذغالی با پارچه‌ی پنبه‌ای نرم و فرم راحت.",
+    "image": "/products/garment-08.webp",
+    "images": [
+      "/products/garment-08.webp"
+    ],
+    "rating": {
+      "rate": 4.4,
+      "count": 110
+    },
+    "thumbnail": "/products/garment-08.webp"
+  }
+]
